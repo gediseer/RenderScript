@@ -11,18 +11,66 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.administrator.rs.MainActivity">
 
+
+    <SeekBar
+        android:id="@+id/radius"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:hint="radius"
+        android:max="30" />
+
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/radiusShow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_alignTop="@+id/radius"
+        android:layout_toRightOf="@+id/radius" />
+
+    <SeekBar
+        android:id="@+id/weight"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:hint="weight"
+        android:max="260" />
+
+    <TextView
+        android:id="@+id/weightShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/weight"
+        android:layout_toRightOf="@+id/weight" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="108dp"
-        android:src="@drawable/scene" />
+        android:src="@drawable/scene"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/apiBlur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/g" />
+
+    <ImageView
+        android:id="@+id/mopi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/g" />
+
 </RelativeLayout>
